@@ -9,7 +9,7 @@ except (IOError, ImportError):
 
 setup(
     name = 'django-tooltips',
-    version = '1.1.1',
+    version = '1.1.2',
     description='Django manageable Bootstrap Tooltips',
     long_description=description,
     author = 'Sander van de Graaf',
@@ -28,5 +28,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Environment :: Web Environment',
     ],
-    zipsafe=False,
+    zip_safe=False,
 )
