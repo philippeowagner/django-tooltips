@@ -42,7 +42,7 @@ Include this in your templates (eg, `base.html`):
 
 And run the migrations:
 
-    $ manage.py migrate
+    $ manage.py migrate tooltips
 
 Now, whenever you add a tooltip via the admin, it will appear on your pages just after the element you provided via the javascript selector:
 
