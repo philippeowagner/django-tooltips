@@ -1,42 +1,52 @@
-django-support-pages
+django-tooltips
 ====================
 
-Manageable bootstrap tooltips and Support pages
+Manageable bootstrap tooltips
 
 
 Requirements
 ============
 
 - Django (duh)
-
-If you want to use the tooltips, you will need:
-
 - Bootstrap
 - Jquery
 
 Installation
 ============
 
-Add `support` to your installated apps:
+Add `tooltips` to your installated apps:
 
 ```python
 INSTALLED_APPS = (
     ...
-    'support',
+    'tooltips',
     ...
 ```
 
-If you want to use the Tooltips, be sure to add the processor to your context processors:
+Add the processor to your `TEMPLATE_CONTEXT_PROCESSORS`:
 
 ```python
 TEMPLATE_CONTEXT_PROCESSORS = (
     ...
-    'support.processors.tooltips',
+    'tooltips.processors.tooltips',
 )
 ```
 
-And include the javascript part in your templates (eg, `base.html`):
+And include this in your templates (eg, `base.html`):
 
-{% include "support/tooltips.html" %}
+{% include "tooltips/tooltips.html" %}
 
-Now, whenever you add a tooltip via the admin, it will appear on your pages
+Now, whenever you add a tooltip via the admin, it will appear on your pages just after the element you provided via the javascript selector:
+
+
+Preview
+=======
+Clientside: 
+
+Admin:
+
+
+Caveats
+=======
+
+As the selectors are plain javascript selectors, you can use all the magic you want. But don't use very wide selectors like `div` or `div:contains("")`, those will probably bring your browser to a standstil :) YMMV
