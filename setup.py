@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-# try:
-import pypandoc
-description = pypandoc.convert('README.md', 'rst')
-# except (IOError, ImportError):
-#    description = ''
+try:
+    import pypandoc
+    description = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    description = ''
 
 setup(
     name = 'django-tooltips',
