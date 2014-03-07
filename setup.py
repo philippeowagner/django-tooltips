@@ -7,17 +7,16 @@ try:
 except (IOError, ImportError):
     description = ''
 
-packages = find_packages() + ['tooltips.templates', 'tooltips.templates.tooltips']
-
 setup(
     name = 'django-tooltips',
-    version = '1.1',
+    version = '1.1.1',
     description='Django manageable Bootstrap Tooltips',
     long_description=description,
     author = 'Sander van de Graaf',
     author_email = 'mail@svdgraaf.nl',
     url = 'http://github.com/svdgraaf/django-tooltips/',
-    packages = packages,
+    packages = find_packages(),
+    include_package_data=True,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
