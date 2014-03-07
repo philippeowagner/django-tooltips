@@ -9,7 +9,7 @@ description = pypandoc.convert('README.md', 'rst')
 
 setup(
     name = 'django-tooltips',
-    version = '0.1',
+    version = '1.0',
     description='Django manageable Bootstrap Tooltips',
     long_description=description,
     author = 'Sander van de Graaf',
@@ -17,7 +17,7 @@ setup(
     url = 'http://github.com/svdgraaf/django-tooltips/',
     packages = find_packages(),
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Framework :: Django',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
