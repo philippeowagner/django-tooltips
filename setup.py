@@ -1,24 +1,19 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-try:
-    README = open('README.md').read()
-except:
-    README = None
-
-try:
-    LICENSE = open('LICENSE').read()
-except:
-    LICENSE = None
+# try:
+import pypandoc
+description = pypandoc.convert('README.md', 'rst')
+# except (IOError, ImportError):
+#    description = ''
 
 setup(
     name = 'django-tooltips',
     version = '0.1',
     description='Django manageable Bootstrap Tooltips',
-    long_description=README,
+    long_description=description,
     author = 'Sander van de Graaf',
     author_email = 'mail@svdgraaf.nl',
-    license = LICENSE,
     url = 'http://github.com/svdgraaf/django-tooltips/',
     packages = find_packages(),
     classifiers=[

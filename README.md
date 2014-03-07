@@ -32,9 +32,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 ```
 
-And include this in your templates (eg, `base.html`):
+Include this in your templates (eg, `base.html`):
 
 {% include "tooltips/tooltips.html" %}
+
+And run the migrations:
+
+    $ manage.py migrate
 
 Now, whenever you add a tooltip via the admin, it will appear on your pages just after the element you provided via the javascript selector:
 
