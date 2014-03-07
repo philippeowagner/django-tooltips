@@ -23,3 +23,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'support.processors.tooltips',
 )
 ```
+
+And include the javascript part in your templates (eg, `base.html`):
+
+{% include "support/tooltips.html" %}
+
+Now, whenever you add a tooltip via the admin, it will appear on your pages
