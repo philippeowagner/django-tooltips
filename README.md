@@ -3,6 +3,17 @@ django-support-pages
 
 Manageable bootstrap tooltips and Support pages
 
+
+Requirements
+============
+
+- Django (duh)
+
+If you want to use the tooltips, you will need:
+
+- Bootstrap
+- Jquery
+
 Installation
 ============
 
@@ -15,7 +26,7 @@ INSTALLED_APPS = (
     ...
 ```
 
-If you want to use the Tooltips, be sure to add the processor to your processors:
+If you want to use the Tooltips, be sure to add the processor to your context processors:
 
 ```python
 TEMPLATE_CONTEXT_PROCESSORS = (
