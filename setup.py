@@ -28,4 +28,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Environment :: Web Environment',
     ],
+    zipsafe=False,
 )
