@@ -14,6 +14,10 @@ Requirements
 Installation
 ============
 
+Install the app via pip:
+
+    $ pip install django-tooltips
+
 Add `tooltips` to your installated apps:
 
 ```python
@@ -45,9 +49,14 @@ Now, whenever you add a tooltip via the admin, it will appear on your pages just
 
 Preview
 =======
-Clientside: 
+Clientside:
+
+![adming](https://raw.github.com/svdgraaf/django-tooltips/master/preview.png)
 
 Admin:
+
+![adming](https://raw.github.com/svdgraaf/django-tooltips/master/admin.png)
+
 
 
 Caveats
