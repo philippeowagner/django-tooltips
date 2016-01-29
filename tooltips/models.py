@@ -11,5 +11,5 @@ class Tooltip(models.Model):
     
     def body(self):
         if self.context_body:
-            return context_body
+            return self.context_body
         return self.core_body
