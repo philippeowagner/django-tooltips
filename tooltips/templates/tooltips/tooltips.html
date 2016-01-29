@@ -6,7 +6,7 @@
             trigger: 'hover',
             title: '{{tooltip.title}}',
             placement: 'auto top',
-            content: '{{tooltip.body}}'
+            content: '{{tooltip.body|safe}}'
         })
     });
 {% endfor %}
